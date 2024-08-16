@@ -65,7 +65,30 @@
     
 
  <div class="container">   
-     <h1>Página inicial do site</h1>
+     <h1>Variáveis em PHP</h1>
+     <p> $numero = 10; //Aqui é uma variável inteira  </p>
+     <p> $string = "Rodolfo camisa 10"; </p>
+     <p> $string1 = "Rodolfo camisa ".$numero; </p>
+     <p> $string2 = "Rodolfo camisa $numero"; </p>
+     <p> $ValorDecimal = 10.50; </p>
+     <p> $Ativo = true; </p>
+     <p> $/* Aqui é um bloco de comentário*/ </p>
+     <?php // tudo que está entre as tags do php não aparece na tela ?>
+
+     <?php // a não que usemos a função echo com string ?>
+
+     <?php
+        echo "Hello World";
+        echo "<br>";
+        $numero = 10;
+        $nome = "Rodolfo";
+        $frase1 = "<p> $nome camisa $numero frase com paragrafo </p>";
+        $frase2 =  $nome. " camisa ".$numero; // cocatenação das antigas
+        echo $frase1;
+        echo "$frase2 É oque tem dentro da variável";
+    ?>
+
+
  </div>
     <script src="bootstrap.bundle.min.js"></script>
 </body>

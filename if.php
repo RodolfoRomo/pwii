@@ -72,7 +72,117 @@
     
 
  <div class="container">   
-     <h1>Página inicial do site</h1>
+     <h1>Estrutura condicional (IF ELSE)</h1>
+
+     <p>$inteira = 10 </p>
+     <p>$nome = "prof" </p>
+     <p>$valor = 10.50 </p>
+     <p>$ativo = true </p>
+
+     <pre>
+         if($inteira == 10)
+         {
+             echo "o conteudo é 10";
+         }
+         else if($inteira >= 11)
+         {
+            echo "maior ou igual a 11"
+         }
+         else
+         {
+             echo "não é 10"
+         }
+    </pre>
+         <?php
+         $inteira = 15;
+         if($inteira == 10)
+         {
+             echo "<h2>A variável é 10</h2>";
+         }
+         else if($inteira >= 11)
+         {
+             echo "<h2>A variável é maior ou igual a 11</h2>";
+         }
+         else
+         {
+            echo "<h2> A variável só pode ser maior que 10</h2>";
+         }
+         ?>
+
+    <p>
+        As variáveis string podem ser contados os caracteres e usados no if
+    </P>
+    <pre>
+        if( count($nome) > 10)
+        {
+            echo "seu nome tem mais que 10 caracteres";
+        }
+    </pre>
+    <p>
+        Podemos verificar se a variavel $nome está vazia
+    </p>
+    <?php
+            $nome = "Rodolforomo";
+            if( strlen($nome) < 10 )
+            {
+                echo "<h2> Seu nome tem menos que 10 caracteres, a quantidade é ".strlen($nome)."</h2>";
+            }
+            else if( strlen($nome) >= 11 )
+            {
+                echo "<h2> Seu nome tem mais que 10 caracteres, quantidade é ".strlen($nome)."</h2>";
+            }
+            else( strlen($nome))
+    ?>
+
+
+    <pre>
+        if( empty($nome) )
+        {
+            echo "Sua variável está vazia";
+        }
+    </pre>
+   
+    <p>
+        Também podemos comparar string normalmente
+    </p>
+    <pre>
+        if($nome == "Rodolfo")
+        {
+            echo "Nome igual";
+        }
+        else
+        {
+           echo "Nomes diferentes"; 
+        }
+    </pre>
+
+    
+
+
+    <p>
+        Podemos verificar se a variável  é verdadeira ou falsa
+
+    </p>
+        
+    <pre>
+        if($ativo)
+        {
+            echo "Verdadeira";
+        }
+        else
+        {
+            echo "Falso";
+        }
+
+    </pre>
+
+
+
+
+
+
+
+
  </div>
     <script src="bootstrap.bundle.min.js"></script>
 </body>
